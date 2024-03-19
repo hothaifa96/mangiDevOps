@@ -17,9 +17,11 @@ pipeline{
         }
 
         stage("build docker image"){
+            
             steps{
                 script{
                     dir("${CODE_DIR}"){
+                        sh "" 
                         sh "docker build -t ${IMAGE_NAME}:${IMAGE_TAG} ."
                     }
                 }
