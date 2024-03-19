@@ -1,6 +1,6 @@
 pipeline{
     agent any
-    parameters{
+    environment{
         CODE_REPO="https://github.com/hothaifa96/mangoapp"
         CODE_DIR= "mangoapp"
         IMAGE_NAME="mango"
